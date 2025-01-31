@@ -10,8 +10,8 @@
     ]">
       <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" class="flex items-center">
-          <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-8 w-auto mr-2" />
-          <span class="text-2xl font-bold text-[#4ade80]">Docutrack</span>
+          <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-10 w-auto mr-2" />
+          <span class="text-2xl font-bold text-[#4ade80] hidden md:block w-auto">Docutrack</span>
         </a>
         <div class="hidden md:flex space-x-4">
           <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`" 
@@ -45,7 +45,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="py-20 px-4">
+    <section id="hero" class="py-60 px-4">
       <div class="container mx-auto text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">Streamline Your Document Management</h1>
         <p class="text-xl mb-8" :class="isDarkMode ? 'text-[#c9c9c9]' : 'text-[#2a2a2a]'">
