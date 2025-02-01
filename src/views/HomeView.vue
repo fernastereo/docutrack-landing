@@ -3,46 +3,7 @@
     'min-h-screen transition-colors duration-300',
     isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-[#111111]'
   ]">
-    <!-- Header -->
-    <header :class="[
-      'sticky top-0 z-50 shadow-md transition-colors duration-300',
-      isDarkMode ? 'bg-[#111111]' : 'bg-white'
-    ]">
-      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" class="flex items-center">
-          <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-10 w-auto mr-2" />
-          <span class="text-2xl font-bold text-[#4ade80] hidden md:block w-auto">Docutrack</span>
-        </a>
-        <div class="hidden md:flex space-x-4">
-          <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`" 
-            :class="['hover:text-[#4ade80] transition-colors', 
-                      isDarkMode ? 'text-white' : 'text-[#111111]']">
-            {{ item }}
-          </a>
-        </div>
-        <div class="flex items-center space-x-4">
-          <button @click="toggleTheme" class="text-[#4ade80]">
-            <SunIcon v-if="isDarkMode" />
-            <MoonIcon v-else />
-          </button>
-          <button @click="toggleMobileMenu" class="md:hidden text-[#4ade80]">
-            <MenuIcon v-if="!mobileMenuOpen" />
-            <XIcon v-else />
-          </button>
-        </div>
-      </nav>
-      <!-- Mobile menu -->
-      <div v-if="mobileMenuOpen" :class="[
-        'md:hidden py-2 transition-colors duration-300',
-        isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
-      ]">
-        <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`" 
-          :class="['block px-4 py-2 transition-colors', 
-                    isDarkMode ? 'hover:bg-[#111111]' : 'hover:bg-white']">
-          {{ item }}
-        </a>
-      </div>
-    </header>
+    <HeaderComponent :isDarkMode="isDarkMode" @switchTheme="toggleTheme"/>
 
     <!-- Hero Section -->
     <section id="hero" class="py-60 px-4">
@@ -174,19 +135,14 @@
 
 <script setup>
 import { ref } from 'vue'
-import { MenuIcon, XIcon, CheckCircleIcon, XCircleIcon, ChevronDownIcon, CheckIcon, SunIcon, MoonIcon } from 'lucide-vue-next'
-
-const mobileMenuOpen = ref(false)
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
+import { CheckCircleIcon, XCircleIcon, ChevronDownIcon, CheckIcon } from 'lucide-vue-next'
+import HeaderComponent from '@/components/HeaderComponent.vue'
 
 const isDarkMode = ref(true) // Default to dark mode
+
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value
 }
-
-const navItems = ['Features', 'Solution', 'FAQ', 'Pricing']
 
 const features = [
   { title: 'Centralized Storage', description: 'Keep all your documents in one secure place', icon: 'FolderIcon' },
