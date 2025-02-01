@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-  import { CheckCircleIcon, XCircleIcon } from 'lucide-vue-next'
+  import { CheckIcon } from 'lucide-vue-next'
   
   const isDarkMode = defineProps(['isDarkMode'])
 
