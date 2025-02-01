@@ -9,38 +9,7 @@
 
     <FeaturesSection :isDarkMode="isDarkMode" />
 
-    <!-- Problem Solution Section -->
-    <section id="solution" class="py-20 px-4">
-      <div class="container mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The Problem We Solve</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div :class="[
-            'p-6 rounded-lg transition-colors duration-300',
-            isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
-          ]">
-            <h3 class="text-2xl font-semibold mb-4">Without Docutrack</h3>
-            <ul class="space-y-2">
-              <li v-for="problem in problems" :key="problem" class="flex items-start">
-                <XCircleIcon class="w-6 h-6 text-red-500 mr-2 flex-shrink-0" />
-                <span>{{ problem }}</span>
-              </li>
-            </ul>
-          </div>
-          <div :class="[
-            'p-6 rounded-lg transition-colors duration-300',
-            isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
-          ]">
-            <h3 class="text-2xl font-semibold mb-4">With Docutrack</h3>
-            <ul class="space-y-2">
-              <li v-for="solution in solutions" :key="solution" class="flex items-start">
-                <CheckCircleIcon class="w-6 h-6 text-[#4ade80] mr-2 flex-shrink-0" />
-                <span>{{ solution }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ProblemsSection :isDarkMode="isDarkMode" />
 
     <!-- FAQ Section -->
     <section id="faq" :class="[
@@ -106,32 +75,17 @@
 
 <script setup>
 import { ref } from 'vue'
-import { CheckCircleIcon, XCircleIcon, ChevronDownIcon, CheckIcon } from 'lucide-vue-next'
+import { ChevronDownIcon, CheckIcon } from 'lucide-vue-next'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import FeaturesSection from '@/components/FeaturesSection.vue'
+import ProblemsSection from '@/components/ProblemsSection.vue'
 
 const isDarkMode = ref(true) // Default to dark mode
 
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value
 }
-
-
-
-const problems = [
-  'Lost documents and wasted time searching',
-  'Inconsistent version control',
-  'Security risks from scattered files',
-  'Inefficient collaboration processes'
-]
-
-const solutions = [
-  'Centralized, easily searchable document repository',
-  'Automated version control and change tracking',
-  'Enhanced security with role-based access control',
-  'Streamlined collaboration with real-time editing'
-]
 
 const faqs = ref([
   { question: 'What is Docutrack?', answer: 'Docutrack is a comprehensive document management system that helps businesses organize, track, and collaborate on documents efficiently and securely.', isOpen: false },
