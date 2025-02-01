@@ -5,18 +5,7 @@
   ]">
     <HeaderComponent :isDarkMode="isDarkMode" @switchTheme="toggleTheme"/>
 
-    <!-- Hero Section -->
-    <section id="hero" class="py-60 px-4">
-      <div class="container mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Streamline Your Document Management</h1>
-        <p class="text-xl mb-8" :class="isDarkMode ? 'text-[#c9c9c9]' : 'text-[#2a2a2a]'">
-          Docutrack helps you organize, track, and collaborate on your documents effortlessly.
-        </p>
-        <button class="bg-[#4ade80] text-[#111111] px-6 py-3 rounded-full font-semibold hover:bg-[#26cf64] transition-colors">
-          Get Started
-        </button>
-      </div>
-    </section>
+    <HeroSection :isDarkMode="isDarkMode" />
 
     <!-- Features Section -->
     <section id="features" :class="[
@@ -137,6 +126,7 @@
 import { ref } from 'vue'
 import { CheckCircleIcon, XCircleIcon, ChevronDownIcon, CheckIcon } from 'lucide-vue-next'
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import HeroSection from '@/components/HeroSection.vue'
 
 const isDarkMode = ref(true) // Default to dark mode
 
