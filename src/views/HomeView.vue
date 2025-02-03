@@ -9,6 +9,7 @@
     <ProblemsSection :isDarkMode="isDarkMode" />
     <FaqSection :isDarkMode="isDarkMode" />
     <PricingSection :isDarkMode="isDarkMode" />
+    <WaitingListSection :isDarkMode="isDarkMode" />
     <FooterComponent :isDarkMode="isDarkMode" :navItems="navItems" />
   </div>
 </template>
@@ -21,6 +22,7 @@ import FeaturesSection from '@/components/FeaturesSection.vue'
 import ProblemsSection from '@/components/ProblemsSection.vue'
 import FaqSection from '@/components/FaqSection.vue'
 import PricingSection from '@/components/PricingSection.vue'
+import WaitingListSection from '@/components/WaitingListSection.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
 const isDarkMode = ref(false) // Default to light mode
