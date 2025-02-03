@@ -29,7 +29,7 @@
 <script setup>
   import { CheckIcon } from 'lucide-vue-next'
   
-  const isDarkMode = defineProps(['isDarkMode'])
+  const { isDarkMode } = defineProps(['isDarkMode'])
 
   const pricingPlans = [
     {

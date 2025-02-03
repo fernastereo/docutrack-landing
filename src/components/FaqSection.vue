@@ -28,7 +28,7 @@
   import { ref } from 'vue'
   import { ChevronDownIcon } from 'lucide-vue-next'
   
-  const isDarkMode = defineProps(['isDarkMode'])
+  const { isDarkMode } = defineProps(['isDarkMode'])
 
   const faqs = ref([
     { question: 'What is Docutrack?', answer: 'Docutrack is a comprehensive document management system that helps businesses organize, track, and collaborate on documents efficiently and securely.', isOpen: false },

@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-  const isDarkMode = defineProps(['isDarkMode'])
+  const { isDarkMode } = defineProps(['isDarkMode'])
 
   const features = [
     { title: 'Centralized Storage', description: 'Keep all your documents in one secure place', icon: 'FolderIcon' },

@@ -35,7 +35,7 @@
 <script setup>
   import { CheckCircleIcon, XCircleIcon } from 'lucide-vue-next'
   
-  const isDarkMode = defineProps(['isDarkMode'])
+  const { isDarkMode } = defineProps(['isDarkMode'])
 
   const problems = [
     'Lost documents and wasted time searching',

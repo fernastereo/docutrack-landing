@@ -31,5 +31,5 @@
 
 <script setup>
 
-  const isDarkMode = defineProps(['isDarkMode'])
+const { isDarkMode } = defineProps(['isDarkMode'])
 </script>

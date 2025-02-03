@@ -126,59 +126,54 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import { RouterLink } from 'vue-router'
-import { MenuIcon, XIcon, SunIcon, MoonIcon } from 'lucide-vue-next'
+  import { ref, onMounted, onUnmounted } from 'vue'
+  import { RouterLink } from 'vue-router'
+  import { MenuIcon, XIcon, SunIcon, MoonIcon } from 'lucide-vue-next'
 
-const emit = defineEmits(['switchTheme'])
+  const emit = defineEmits(['switchTheme'])
 
-const navItems = ['Features', 'Solution', 'FAQ', 'Pricing']
+  const navItems = ['Features', 'Solution', 'FAQ', 'Pricing']
 
-const props = defineProps({
-  isDarkMode: {
-    type: Boolean,
-    required: true
-  }
-})
+  const { isDarkMode } = defineProps(['isDarkMode'])
 
-const mobileMenuOpen = ref(false)
+  const mobileMenuOpen = ref(false)
 
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-  if (mobileMenuOpen.value) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = ''
-  }
-}
-
-const closeMobileMenu = () => {
-  mobileMenuOpen.value = false
-  document.body.style.overflow = ''
-}
-
-const toggleTheme = () => {
-  emit('switchTheme')
-}
-
-onMounted(() => {
-  const handleEscape = (e) => {
-    if (e.key === 'Escape' && mobileMenuOpen.value) {
-      closeMobileMenu()
+  const toggleMobileMenu = () => {
+    mobileMenuOpen.value = !mobileMenuOpen.value
+    if (mobileMenuOpen.value) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
     }
   }
-  document.addEventListener('keydown', handleEscape)
-})
 
-onUnmounted(() => {
-  document.body.style.overflow = ''
-  document.removeEventListener('keydown', handleEscape)
-})
+  const closeMobileMenu = () => {
+    mobileMenuOpen.value = false
+    document.body.style.overflow = ''
+  }
+
+  const toggleTheme = () => {
+    emit('switchTheme')
+  }
+
+  onMounted(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && mobileMenuOpen.value) {
+        closeMobileMenu()
+      }
+    }
+    document.addEventListener('keydown', handleEscape)
+  })
+
+  onUnmounted(() => {
+    document.body.style.overflow = ''
+    document.removeEventListener('keydown', handleEscape)
+  })
 </script>
 
 <style scoped>
-/* Prevent content shift when scrollbar disappears */
-.overflow-hidden {
-  padding-right: var(--scrollbar-width, 0px);
-}
+  /* Prevent content shift when scrollbar disappears */
+  .overflow-hidden {
+    padding-right: var(--scrollbar-width, 0px);
+  }
 </style>
