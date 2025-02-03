@@ -1,11 +1,11 @@
 <template>
-  <section id="solution" class="py-20 px-4">
+  <section id="solution" class="py-40 px-4">
     <div class="container mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The Problem We Solve</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-20">The Problem We Solve</h2>
+      <div class="mx-10 grid grid-cols-1 md:grid-cols-2 gap-14">
         <div :class="[
           'p-6 rounded-lg transition-colors duration-300',
-          isDarkMode ? 'bg-base-300' : 'bg-base-200'
+          isDarkMode ? 'bg-base-300' : 'bg-base-100 border-2 border-base-200 shadow-2xl'
         ]">
           <h3 class="text-2xl font-semibold mb-4">Without Docutrack</h3>
           <ul class="space-y-2">
@@ -17,7 +17,7 @@
         </div>
         <div :class="[
           'p-6 rounded-lg transition-colors duration-300',
-          isDarkMode ? 'bg-base-300' : 'bg-base-200'
+          isDarkMode ? 'bg-base-300' : 'bg-base-100 border-2 border-base-200 shadow-2xl'
         ]">
           <h3 class="text-2xl font-semibold mb-4">With Docutrack</h3>
           <ul class="space-y-2">
