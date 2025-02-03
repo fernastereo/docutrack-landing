@@ -3,13 +3,13 @@
     'min-h-screen transition-colors duration-300',
     isDarkMode ? 'bg-base-400 text-base-100' : 'bg-base-100 text-base-400'
   ]">
-    <HeaderComponent :isDarkMode="isDarkMode" @switchTheme="toggleTheme"/>
+    <HeaderComponent :isDarkMode="isDarkMode" :navItems="navItems" @switchTheme="toggleTheme"/>
     <HeroSection :isDarkMode="isDarkMode" />
     <FeaturesSection :isDarkMode="isDarkMode" />
     <ProblemsSection :isDarkMode="isDarkMode" />
     <FaqSection :isDarkMode="isDarkMode" />
     <PricingSection :isDarkMode="isDarkMode" />
-    <FooterComponent :isDarkMode="isDarkMode" />
+    <FooterComponent :isDarkMode="isDarkMode" :navItems="navItems" />
   </div>
 </template>
 
@@ -24,6 +24,7 @@ import PricingSection from '@/components/PricingSection.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
 const isDarkMode = ref(false) // Default to light mode
+const navItems = ['Features', 'Solution', 'FAQ', 'Pricing']
 
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value

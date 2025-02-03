@@ -132,9 +132,7 @@
 
   const emit = defineEmits(['switchTheme'])
 
-  const navItems = ['Features', 'Solution', 'FAQ', 'Pricing']
-
-  const { isDarkMode } = defineProps(['isDarkMode'])
+  const { isDarkMode, navItems } = defineProps(['isDarkMode', 'navItems'])
 
   const mobileMenuOpen = ref(false)
 
