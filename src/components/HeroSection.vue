@@ -22,14 +22,16 @@
       <p class="text-xl mb-8" :class="isDarkMode ? 'text-base-200' : 'text-base-300'">
         Docutrack helps you organize, track, and collaborate on your documents effortlessly.
       </p>
-      <button class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold hover:bg-primary-300 transition-colors">
+      <WaitingList :isDarkMode="isDarkMode" />
+      <!-- <button class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold hover:bg-primary-300 transition-colors">
         Get Started
-      </button>
+      </button> -->
     </div>
   </section>
 </template>
 
 <script setup>
-
-const { isDarkMode } = defineProps(['isDarkMode'])
+  import WaitingList from '@/components/WaitingList.vue'
+  
+  const { isDarkMode } = defineProps(['isDarkMode'])
 </script>
