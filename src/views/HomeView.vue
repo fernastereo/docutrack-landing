@@ -1,7 +1,7 @@
 <template>
   <div :class="[
     'min-h-screen transition-colors duration-300',
-    isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-[#111111]'
+    isDarkMode ? 'bg-base-400 text-base-100' : 'bg-base-100 text-base-400'
   ]">
     <HeaderComponent :isDarkMode="isDarkMode" @switchTheme="toggleTheme"/>
     <HeroSection :isDarkMode="isDarkMode" />

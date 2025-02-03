@@ -14,6 +14,7 @@ export default {
         300: '#2a2a2a',
         400: '#111111',
       },
+      red: '#ff0000',
     },
     extend: {},
   },

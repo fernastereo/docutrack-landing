@@ -2,28 +2,28 @@
   <!-- Header -->
   <header :class="[
     'sticky top-0 z-50 shadow-md transition-colors duration-300',
-    isDarkMode ? 'bg-[#111111]' : 'bg-white'
+    isDarkMode ? 'bg-base-400' : 'bg-base-100'
   ]">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
       <RouterLink to="/" class="flex items-center relative z-50">
         <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-10 w-auto mr-2" />
-        <span class="text-2xl font-bold text-[#4ade80] hidden md:block w-auto">Docutrack</span>
+        <span class="text-2xl font-bold text-primary-200 hidden md:block w-auto">Docutrack</span>
       </RouterLink>
       <div class="hidden md:flex justify-end gap-6 lg:gap-12 space-x-4 w-2/3">
         <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`" 
-          :class="['hover:text-[#4ade80] transition-colors', 
-                    isDarkMode ? 'text-white' : 'text-[#111111]']">
+          :class="['hover:text-primary-200 transition-colors font-semibold text-lg', 
+                    isDarkMode ? 'text-base-100' : 'text-base-400']">
           {{ item }}
         </a>
       </div>
       <div class="flex items-center space-x-4">
-        <button @click="toggleTheme" class="text-[#4ade80] relative z-50">
+        <button @click="toggleTheme" class="text-primary-200 relative z-50">
           <SunIcon v-if="isDarkMode" class="w-6 h-6" />
           <MoonIcon v-else class="w-6 h-6" />
         </button>
         <button 
           @click="toggleMobileMenu" 
-          class="md:hidden text-[#4ade80] relative z-50"
+          class="md:hidden text-primary-200 relative z-50"
           aria-label="Toggle menu"
         >
           <span class="sr-only">Toggle menu</span>
@@ -33,14 +33,14 @@
                 :class="[
                   'absolute h-0.5 w-6 transform transition-all duration-300',
                   mobileMenuOpen ? 'rotate-45 translate-y-2' : 'translate-y-0',
-                  isDarkMode ? 'bg-[#4ade80]' : 'bg-[#4ade80]'
+                  isDarkMode ? 'bg-primary-200' : 'bg-primary-200'
                 ]"
               ></span>
               <span 
                 :class="[
                   'absolute h-0.5 w-6 transform transition-all duration-300',
                   mobileMenuOpen ? 'opacity-0' : 'opacity-100',
-                  isDarkMode ? 'bg-[#4ade80]' : 'bg-[#4ade80]'
+                  isDarkMode ? 'bg-primary-200' : 'bg-primary-200'
                 ]"
                 style="top: 50%; transform: translateY(-50%);"
               ></span>
@@ -48,7 +48,7 @@
                 :class="[
                   'absolute h-0.5 w-6 transform transition-all duration-300',
                   mobileMenuOpen ? '-rotate-45 -translate-y-2' : 'translate-y-4',
-                  isDarkMode ? 'bg-[#4ade80]' : 'bg-[#4ade80]'
+                  isDarkMode ? 'bg-primary-200' : 'bg-primary-200'
                 ]"
               ></span>
             </div>
@@ -83,7 +83,7 @@
             v-if="mobileMenuOpen"
             :class="[
               'fixed inset-y-0 right-0 w-full max-w p-6 overflow-y-auto',
-              isDarkMode ? 'bg-[#111111]' : 'bg-white'
+              isDarkMode ? 'bg-base-400' : 'bg-base-100'
             ]"
             @click.stop
           >
@@ -98,8 +98,8 @@
                     :class="[
                       'text-2xl font-semibold text-center py-2 transition-colors duration-300',
                       isDarkMode 
-                        ? 'text-white hover:text-[#4ade80]' 
-                        : 'text-[#111111] hover:text-[#4ade80]'
+                        ? 'text-base-100 hover:text-primary-200' 
+                        : 'text-base-400 hover:text-primary-200'
                     ]"
                   >
                     {{ item }}
@@ -110,7 +110,7 @@
               <div class="pt-6 mt-auto border-t border-gray-200 dark:border-gray-800">
                 <div class="flex justify-center space-x-6">
                   <button 
-                    class="px-6 py-3 rounded-full bg-[#4ade80] text-[#111111] font-semibold hover:bg-[#26cf64] transition-colors"
+                    class="px-6 py-3 rounded-full bg-primary-200 text-base-400 font-semibold hover:bg-primary-300 transition-colors"
                     @click="closeMobileMenu"
                   >
                     Get Started

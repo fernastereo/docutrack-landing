@@ -5,24 +5,24 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div :class="[
           'p-6 rounded-lg transition-colors duration-300',
-          isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
+          isDarkMode ? 'bg-base-300' : 'bg-base-200'
         ]">
           <h3 class="text-2xl font-semibold mb-4">Without Docutrack</h3>
           <ul class="space-y-2">
             <li v-for="problem in problems" :key="problem" class="flex items-start">
-              <XCircleIcon class="w-6 h-6 text-red-500 mr-2 flex-shrink-0" />
+              <XCircleIcon class="w-6 h-6 text-red mr-2 flex-shrink-0" />
               <span>{{ problem }}</span>
             </li>
           </ul>
         </div>
         <div :class="[
           'p-6 rounded-lg transition-colors duration-300',
-          isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
+          isDarkMode ? 'bg-base-300' : 'bg-base-200'
         ]">
           <h3 class="text-2xl font-semibold mb-4">With Docutrack</h3>
           <ul class="space-y-2">
             <li v-for="solution in solutions" :key="solution" class="flex items-start">
-              <CheckCircleIcon class="w-6 h-6 text-[#4ade80] mr-2 flex-shrink-0" />
+              <CheckCircleIcon class="w-6 h-6 text-primary-200 mr-2 flex-shrink-0" />
               <span>{{ solution }}</span>
             </li>
           </ul>
