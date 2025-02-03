@@ -23,7 +23,7 @@ import FaqSection from '@/components/FaqSection.vue'
 import PricingSection from '@/components/PricingSection.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
-const isDarkMode = ref(true) // Default to dark mode
+const isDarkMode = ref(false) // Default to light mode
 
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value
