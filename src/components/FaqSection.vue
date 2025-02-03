@@ -2,20 +2,20 @@
   <!-- FAQ Section -->
   <section id="faq" :class="[
       'py-20 px-4 transition-colors duration-300',
-      isDarkMode ? 'bg-[#2a2a2a]' : 'bg-[#c9c9c9]'
+      isDarkMode ? 'bg-base-300' : 'bg-base-200'
     ]">
     <div class="container mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
       <div class="space-y-6">
         <div v-for="faq in faqs" :key="faq.question" :class="[
           'p-6 rounded-lg transition-colors duration-300',
-          isDarkMode ? 'bg-[#111111]' : 'bg-white'
+          isDarkMode ? 'bg-base-400' : 'bg-base-100'
         ]">
           <button @click="faq.isOpen = !faq.isOpen" class="flex justify-between items-center w-full text-left">
             <span class="text-xl font-semibold">{{ faq.question }}</span>
             <ChevronDownIcon :class="['w-6 h-6 transition-transform', { 'transform rotate-180': faq.isOpen }]" />
           </button>
-          <p v-show="faq.isOpen" class="mt-4" :class="isDarkMode ? 'text-[#75e69e]' : 'text-[#2a2a2a]'">
+          <p v-show="faq.isOpen" class="mt-4" :class="isDarkMode ? 'text-primary-100' : 'text-base-300'">
             {{ faq.answer }}
           </p>
         </div>
