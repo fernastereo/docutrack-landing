@@ -23,15 +23,12 @@
         Docutrack helps you organize, track, and collaborate on your documents effortlessly.
       </p>
       <WaitingList :isDarkMode="isDarkMode" />
-      <!-- <button class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold hover:bg-primary-300 transition-colors">
-        Get Started
-      </button> -->
     </div>
   </section>
 </template>
 
 <script setup>
   import WaitingList from '@/components/WaitingList.vue'
-  
+
   const { isDarkMode } = defineProps(['isDarkMode'])
 </script>
