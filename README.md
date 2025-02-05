@@ -1,6 +1,6 @@
 # docutrack-landing
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a landing page for Docutrack, a comprehensive document management system built with Vue 3 and Vite.
 
 ## Recommended IDE Setup
 
@@ -27,3 +27,44 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Environment Variables
+Create a .env file in the root directory and add the following environment variables:
+```sh
+VITE_API_KEY='your-api-key'
+VITE_AUTH_DOMAIN='your-auth-domain'
+VITE_PROJECT_ID='your-project-id'
+VITE_STORAGE_BUCKET='your-storage-bucket'
+VITE_MESSAGING_SENDER_ID='your-messaging-sender-id'
+VITE_APP_ID='your-app-id'
+VITE_MEASUREMENT_ID='your-measurement-id'
+```
+
+### Firebase Configuration
+The Firebase configuration is located in firebaseConfig.js. Ensure you have the correct Firebase project settings in your .env file.
+
+### Components
+The project includes several Vue components located in the components directory:
+
+  - HeaderComponent
+  - HeroSection
+  - FeaturesSection
+  - ProblemsSection
+  - FaqSection
+  - PricingSection
+  - WaitingListSection
+  - FooterComponent
+  - WaitingList
+
+
+### Views
+The main view is located in the HomeView.vue file.
+
+### Router
+The router configuration is located in index.js.
+
+### Tailwind CSS
+Tailwind CSS is used for styling. The configuration is located in tailwind.config.js and postcss.config.js.
+
+### License
+This project is licensed under the MIT License.
