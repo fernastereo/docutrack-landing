@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && copy CNAME dist\\CNAME",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && copy CNAME dist\\CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "firebase": "^11.2.0",
