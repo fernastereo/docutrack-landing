@@ -1,0 +1,41 @@
+{
+  "es": {
+    "title": "Características Destacadas",
+    "features": [
+      { "title": "Gestión Centralizada", "description": "Recibe y organiza todas las peticiones y documentos en un solo lugar.", "icon": "Folder" },
+      { "title": "Seguimiento en Tiempo Real", "description": "Permite a tus clientes ver el estado de sus solicitudes en cualquier momento.", "icon": "FileClock" },
+      { "title": "Asistencia con Inteligencia Artificial", "description": "Clasificación Automática, Sugerencias Inteligentes, Detección de Errores, Predicción de Tiempos, Chatbot Integrado", "icon": "Bot" },
+      { "title": "Notificaciones Automáticas", "description": "Envía alertas por email o SMS ante cambios de estado o actualizaciones.", "icon": "BellRing" },
+      { "title": "Multitenant", "description": "Funciona para múltiples oficinas o departamentos, cada uno con su espacio independiente.", "icon": "UsersRound" },
+      { "title": "Comparte y Colabora", "description": "Facilita la comunicación entre clientes y equipos internos con comentarios y adjuntos.", "icon": "Share2" },
+      { "title": "Analítica Avanzada", "description": "Obtén métricas clave para optimizar tus procesos y tiempos de respuesta", "icon": "ChartColumnDecreasing" },
+      { "title": "Solicitudes Personalizadas", "description": "Crea tipos de solicitudes con campos y flujos de trabajo adaptados a tus necesidades. Desde formularios simples hasta procesos complejos, Docutrack se ajusta a ti.", "icon": "AppWindow" }
+    ]
+  },
+  "en": {
+    "title": "Key Features",
+    "features": [
+      { "title": "Centralized Management", "description": "Receive and organize all requests and documents in one place.", "icon": "Folder" },
+      { "title": "Real-Time Tracking", "description": "Allow your clients to see the status of their requests at any time.", "icon": "FileClock" },
+      { "title": "AI-Powered Assistance", "description": "Automatic Classification, Smart Suggestions, Error Detection, Time Predictions, Integrated Chatbot", "icon": "Bot" },
+      { "title": "Automatic Notifications", "description": "Send email or SMS alerts for status changes or updates.", "icon": "BellRing" },
+      { "title": "Multitenant", "description": "Works for multiple offices or departments, each with its own independent space.", "icon": "UsersRound" },
+      { "title": "Share and Collaborate", "description": "Facilitate communication between clients and internal teams with comments and attachments.", "icon": "Share2" },
+      { "title": "Advanced Analytics", "description": "Get key metrics to optimize your processes and response times.", "icon": "ChartColumnDecreasing" },
+      { "title": "Custom Requests", "description": "Create request types with fields and workflows tailored to your needs. From simple forms to complex processes, Docutrack adapts to you.", "icon": "AppWindow" }
+    ]
+  },
+  "de": {
+    "title": "Hauptmerkmale",
+    "features": [
+      { "title": "Zentralisiertes Management", "description": "Erhalten und organisieren Sie alle Anfragen und Dokumente an einem Ort.", "icon": "Folder" },
+      { "title": "Echtzeit-Verfolgung", "description": "Ermöglichen Sie Ihren Kunden, den Status ihrer Anfragen jederzeit einzusehen.", "icon": "FileClock" },
+      { "title": "KI-gestützte Unterstützung", "description": "Automatische Klassifizierung, Intelligente Vorschläge, Fehlererkennung, Zeitvorhersagen, Integrierter Chatbot", "icon": "Bot" },
+      { "title": "Automatische Benachrichtigungen", "description": "Senden Sie E-Mail- oder SMS-Benachrichtigungen bei Statusänderungen oder Updates.", "icon": "BellRing" },
+      { "title": "Multitenant-Fähigkeit", "description": "Funktioniert für mehrere Büros oder Abteilungen, jeder mit seinem eigenen unabhängigen Bereich.", "icon": "UsersRound" },
+      { "title": "Teilen und Zusammenarbeiten", "description": "Erleichtern Sie die Kommunikation zwischen Kunden und internen Teams durch Kommentare und Anhänge.", "icon": "Share2" },
+      { "title": "Erweiterte Analysen", "description": "Erhalten Sie wichtige Kennzahlen, um Ihre Prozesse und Antwortzeiten zu optimieren.", "icon": "ChartColumnDecreasing" },
+      { "title": "Benutzerdefinierte Anfragen", "description": "Erstellen Sie Anfragetypen mit Feldern und Workflows, die auf Ihre Bedürfnisse zugeschnitten sind. Von einfachen Formularen bis zu komplexen Prozessen – Docutrack passt sich Ihnen an.", "icon": "AppWindow" }
+    ]
+  }
+}
