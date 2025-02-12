@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative py-60 px-4 overflow-hidden">
+  <section id="hero" class="relative py-32 md:py-60 px-4 overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img
@@ -17,11 +17,13 @@
     <!-- Content -->
     <div class="container mx-auto text-center relative z-10">
       <h1 class="text-4xl md:text-6xl font-bold mb-6" :class="isDarkMode ? 'text-base-100' : 'text-base-400'">
-        Streamline Your Document Management
+        {{ content.headline }}
       </h1>
-      <p class="text-xl mb-8" :class="isDarkMode ? 'text-base-200' : 'text-base-300'">
-        Docutrack helps you organize, track, and collaborate on your documents effortlessly.
+      <p class="text-lg md:text-xl mb-6" :class="isDarkMode ? 'text-base-200' : 'text-base-300'">
+        {{ content.subHeadline1 }}
       </p>
+      <p class="text-md md:text-xl mb-8">
+        <span class="font-bold">{{ content.subHeadline2.bolded }}</span> {{ content.subHeadline2.unbolded }}</p>
       <WaitingList :isDarkMode="isDarkMode" />
     </div>
   </section>
@@ -29,6 +31,12 @@
 
 <script setup>
   import WaitingList from '@/components/WaitingList.vue'
+  import heroContent from '@/data/heroContent.json'
+  import { useLanguage } from '@/composables/useLanguage';
+  import { computed } from 'vue';
 
+  const { language } = useLanguage()
+  const content = computed(() => heroContent[language.value])
+  
   const { isDarkMode } = defineProps(['isDarkMode'])
 </script>

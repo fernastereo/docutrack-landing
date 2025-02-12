@@ -1,0 +1,26 @@
+{
+  "es": {
+    "headline": "Simplifica la Gestión de Peticiones y Documentos",
+    "subHeadline1": "Docutrack es La plataforma todo en uno para recibir, gestionar y dar seguimiento a peticiones, solicitudes y documentos de tus clientes.",
+    "subHeadline2": {
+      "bolded": "Personaliza tus tipos de solicitudes y flujos de trabajo",
+      "unbolded": "para adaptarte a las necesidades únicas de tu negocio."
+    }
+  },
+  "en": {
+    "headline": "Simplify the Management of Requests and Documents",
+    "subHeadline1": "Docutrack is the all-in-one platform to receive, manage, and track your clients' requests, applications, and documents.",
+    "subHeadline2": {
+      "bolded": "Customize your request types and workflows",
+      "unbolded": "to fit the unique needs of your business."
+    }
+  },
+  "de": {
+    "headline": "Vereinfachen Sie die Verwaltung von Anfragen und Dokumenten",
+    "subHeadline1": "Docutrack ist die All-in-One-Plattform, um Anfragen, Anträge und Dokumente Ihrer Kunden zu empfangen, zu verwalten und zu verfolgen.",
+    "subHeadline2": {
+      "bolded": "Passen Sie Ihre Anfragetypen und Workflows an,",
+      "unbolded": "um den einzigartigen Anforderungen Ihres Unternehmens gerecht zu werden."
+    }
+  }
+}
