@@ -18,7 +18,7 @@
       <div class="py-6 px-2 flex flex-col md:flex-row md:container md:items-center md:justify-between">
         <div class="py-4">
           <nav class="flex flex-col items-center gap-6 text-md font-semibold md:flex-row">
-            <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`">{{ item }}</a>
+            <a v-for="item in navItems" :key="item.name" :href="`#${item.link.toLowerCase()}`">{{ item.name }}</a>
           </nav>
         </div>
         <div class="my-4 py-4 text-center text-sm flex flex-row justify-start gap-2">

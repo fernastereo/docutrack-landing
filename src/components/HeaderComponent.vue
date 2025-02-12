@@ -5,16 +5,20 @@
     isDarkMode ? 'bg-base-400' : 'bg-base-100'
   ]">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <RouterLink to="/" class="flex items-center relative z-50">
+      <a href="#hero" class="flex items-center relative z-50">
         <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-10 w-auto mr-2" />
         <span class="text-2xl font-bold text-primary-200 hidden md:block w-auto">Docutrack</span>
-      </RouterLink>
+      </a>
+
       <div class="hidden md:flex justify-end gap-6 lg:gap-12 space-x-4 w-2/3">
-        <a v-for="item in navItems" :key="item" :href="`#${item.toLowerCase()}`" 
+        <a v-for="item in navItems" :key="item.name" :href="`#${item.link.toLowerCase()}`" 
           :class="['hover:text-primary-200 transition-colors font-semibold text-lg', 
                     isDarkMode ? 'text-base-100' : 'text-base-400']">
-          {{ item }}
+          {{ item.name }}
         </a>
+      </div>
+      <div class="hidden md:block">
+        <LanguageSelector size="24"/>
       </div>
       <div class="flex items-center space-x-4">
         <button @click="toggleTheme" class="text-primary-200 relative z-50">
@@ -92,8 +96,8 @@
                 <nav class="flex flex-col space-y-8">
                   <a 
                     v-for="item in navItems" 
-                    :key="item" 
-                    :href="`#${item.toLowerCase()}`"
+                    :key="item.name" 
+                    :href="`#${item.link.toLowerCase()}`"
                     @click="closeMobileMenu"
                     :class="[
                       'text-2xl font-semibold text-center py-2 transition-colors duration-300',
@@ -102,19 +106,14 @@
                         : 'text-base-400 hover:text-primary-200'
                     ]"
                   >
-                    {{ item }}
+                    {{ item.name }}
                   </a>
                 </nav>
               </div>
               
               <div class="pt-6 mt-auto border-t border-gray-200 dark:border-gray-800">
                 <div class="flex justify-center space-x-6">
-                  <button 
-                    class="px-6 py-3 rounded-full bg-primary-200 text-base-400 font-semibold hover:bg-primary-300 transition-colors"
-                    @click="closeMobileMenu"
-                  >
-                    Get Started
-                  </button>
+                  <LanguageSelector size="24"/>
                 </div>
               </div>
             </div>
@@ -129,6 +128,7 @@
   import { ref, onMounted, onUnmounted } from 'vue'
   import { RouterLink } from 'vue-router'
   import { MenuIcon, XIcon, SunIcon, MoonIcon } from 'lucide-vue-next'
+  import LanguageSelector from '@/components/LanguageSelector.vue'
 
   const emit = defineEmits(['switchTheme'])
 
@@ -154,12 +154,13 @@
     emit('switchTheme')
   }
 
-  onMounted(() => {
-    const handleEscape = (e) => {
-      if (e.key === 'Escape' && mobileMenuOpen.value) {
-        closeMobileMenu()
-      }
+  const handleEscape = (e) => {
+    if (e.key === 'Escape' && mobileMenuOpen.value) {
+      closeMobileMenu()
     }
+  }
+
+  onMounted(() => {
     document.addEventListener('keydown', handleEscape)
   })
 

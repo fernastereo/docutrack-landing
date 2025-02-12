@@ -1,0 +1,56 @@
+{
+  "es": [
+      {
+        "name": "Funciones",
+        "link": "features"
+      },
+      { 
+        "name": "Solución",
+        "link": "solution"
+      },
+      {
+        "name": "FAQ",
+        "link": "faq"
+      },
+      {
+        "name": "Precios",
+        "link": "precios"
+      }
+    ],
+  "en": [
+    {
+      "name": "Features",
+      "link": "features"
+    },
+    { 
+      "name": "Solution",
+      "link": "solution"
+    },
+    {
+      "name": "FAQ",
+      "link": "faq"
+    },
+    {
+      "name": "Pricing",
+      "link": "pricing"
+    }
+  ],
+  "de": [
+    {
+      "name": "Funktionen",
+      "link": "features"
+    },
+    { 
+      "name": "Lösung", 
+      "link": "solution"
+    },
+    {
+      "name": "FAQ", 
+      "link": "faq"
+    },
+    {
+      "name": "Preise",
+      "link": "pricing"
+    }
+  ]
+}
