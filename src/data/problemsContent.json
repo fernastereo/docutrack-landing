@@ -1,0 +1,176 @@
+{
+  "es": {
+    "title": "Sin Docutrack vs. Con Docutrack",
+    "subtitle": "Descubre cómo Docutrack transforma procesos desorganizados en flujos de trabajo eficientes.",
+    "cta": {
+      "title": "Transforma tus procesos hoy.",
+      "button": "Únete a la waitlist y sé parte del cambio."
+    },
+    "without": {
+      "title": "Sin Docutrack",
+      "list": [
+        {
+          "title": "Procesos lentos y desorganizados:",
+          "body": "Las solicitudes se pierden en correos, papeles o sistemas obsoletos."
+        },
+        {
+          "title": "Falta de transparencia:",
+          "body": "Los clientes no saben en qué estado están sus peticiones, generando frustración."
+        },
+        {
+          "title": "Comunicación ineficiente:",
+          "body": "Los equipos internos pierden tiempo buscando información o coordinando respuestas."
+        },
+        {
+          "title": "Errores frecuentes:",
+          "body": "La falta de seguimiento y control aumenta los errores y retrasos."
+        },
+        {
+          "title": "Gestión manual y propensa a errores:",
+          "body": "La clasificación y asignación de solicitudes se hace manualmente, lo que consume tiempo y recursos."
+        }
+      ]
+    },
+    "with": {
+      "title": "Con Docutrack",
+      "list": [
+        {
+          "title": "Procesos ágiles y organizados:",
+          "body": "Centraliza todas las solicitudes en una plataforma intuitiva."
+        },        
+        {
+          "title": "Transparencia total:",
+          "body": "Los clientes pueden ver el estado de sus peticiones en tiempo real."
+        },        
+        {
+          "title": "Comunicación fluida:",
+          "body": "Comentarios, notificaciones y adjuntos simplifican la colaboración."
+        },        
+        {
+          "title": "Control y precisión:",
+          "body": "Reduce errores y mejora los tiempos de respuesta con flujos de trabajo claros."
+        },        
+        {
+          "title": "Asistencia con Inteligencia Artificial:",
+          "body": "Clasifica y asigna automáticamente las solicitudes al departamento correcto. Detecta errores en formularios y sugiere correcciones. Predice tiempos de respuesta basados en datos históricos. Ofrece respuestas automáticas a preguntas frecuentes mediante un chatbot integrado."
+        }
+      ]
+    }
+  },
+  "en": {
+    "title": "Without Docutrack vs. With Docutrack",
+    "subtitle": "Discover how Docutrack transforms disorganized processes into streamlined workflows.",
+    "cta": {
+      "title": "Transform your processes today.",
+      "button": "Join the waitlist and be part of the change."
+    },
+    "without": {
+      "title": "Without Docutrack",
+      "list": [
+        {
+          "title": "Slow and disorganized processes:",
+          "body": "Requests get lost in emails, paperwork, or outdated systems."
+        },
+        {
+          "title": "Lack of transparency:",
+          "body": "Clients don’t know the status of their requests, leading to frustration."
+        },
+        {
+          "title": "Inefficient communication:",
+          "body": "Internal teams waste time searching for information or coordinating responses."
+        },
+        {
+          "title": "Frequent errors:",
+          "body": "Lack of tracking and control increases mistakes and delays."
+        },
+        {
+          "title": "Manual and error-prone management:",
+          "body": "Requests are classified and assigned manually, consuming time and resources."
+        }
+      ]
+    },
+    "with": {
+      "title": "With Docutrack",
+      "list": [
+        {
+          "title": "Streamlined and organized processes:",
+          "body": "Centralize all requests in an intuitive platform."
+        },
+        {
+          "title": "Total transparency:",
+          "body": "Clients can see the status of their requests in real time."
+        },
+        {
+          "title": "Smooth communication:",
+          "body": "Comments, notifications, and attachments simplify collaboration."
+        },
+        {
+          "title": "Control and accuracy:",
+          "body": "Reduces errors and improves response times with clear workflows."
+        },
+        {
+          "title": "AI-Powered Assistance:",
+          "body": "Automatically classifies and assigns requests to the right department. Detects errors in forms and suggests corrections. Predicts response times based on historical data. Provides instant answers to frequent questions through an integrated chatbot."
+        }
+      ]
+    }
+  },
+  "de": {
+    "title": "Ohne Docutrack vs. Mit Docutrack",
+    "subtitle": "Entdecken Sie, wie Docutrack chaotische Prozesse in effiziente Workflows verwandelt.",
+    "cta": {
+      "title": "Transformieren Sie Ihre Prozesse noch heute.",
+      "button": "Melden Sie sich für die Warteliste an und seien Sie Teil des Wandels."
+    },
+    "without": {
+      "title": "Ohne Docutrack",
+      "list": [
+        {
+          "title": "Langsame und unorganisierte Prozesse:",
+          "body": "Anfragen gehen in E-Mails, Papierkram oder veralteten Systemen verloren."
+        },
+        {
+          "title": "Mangelnde Transparenz:",
+          "body": "Kunden wissen nicht, in welchem Status sich ihre Anfragen befinden, was zu Frustration führt."
+        },
+        {
+          "title": "Ineffiziente Kommunikation:",
+          "body": "Interne Teams verschwenden Zeit mit der Suche nach Informationen oder der Koordination von Antworten."
+        },
+        {
+          "title": "Häufige Fehler:",
+          "body": "Mangelnde Nachverfolgung und Kontrolle erhöhen Fehler und Verzögerungen."
+        },
+        {
+          "title": "Manuelle und fehleranfällige Verwaltung:",
+          "body": "Anfragen werden manuell klassifiziert und zugewiesen, was Zeit und Ressourcen verbraucht."
+        }
+      ]
+    },
+    "with": {
+      "title": "Mit Docutrack",
+      "list": [
+        {
+          "title": "Effiziente und organisierte Prozesse:",
+          "body": "Zentralisiert alle Anfragen in einer intuitiven Plattform."
+        },
+        {
+          "title": "Volle Transparenz:",
+          "body": "Kunden können den Status ihrer Anfragen in Echtzeit einsehen."
+        },
+        {
+          "title": "Reibungslose Kommunikation:",
+          "body": "Kommentare, Benachrichtigungen und Anhänge vereinfachen die Zusammenarbeit."
+        },
+        {
+          "title": "Kontrolle und Präzision:",
+          "body": "Reduziert Fehler und verbessert Antwortzeiten mit klaren Workflows."
+        },
+        {
+          "title": "KI-gestützte Unterstützung:",
+          "body": "Klassifiziert und weist Anfragen automatisch der richtigen Abteilung zu.  Erkennt Fehler in Formularen und schlägt Korrekturen vor. Sagt Antwortzeiten basierend auf historischen Daten voraus. Bietet sofortige Antworten auf häufige Fragen durch einen integrierten Chatbot."
+        }
+      ]
+    }
+  }
+}
