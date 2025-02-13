@@ -28,6 +28,10 @@
   import UseCasesSection from '@/components/UseCasesSection.vue'
   import WaitingListSection from '@/components/WaitingListSection.vue'
   import FooterComponent from '@/components/FooterComponent.vue'
+  import { useGtag } from "vue-gtag-next";
+
+  const { pageview } = useGtag() 
+  pageview({ page_path: "/" });
 
   const { language } = useLanguage()
   const isDarkMode = ref(false) // Default to light mode

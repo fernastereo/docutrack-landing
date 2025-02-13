@@ -47,6 +47,10 @@
   import FooterComponent from '@/components/FooterComponent.vue'
   import { useCollection } from 'vuefire'
   import { collection } from 'firebase/firestore'
+  import { useGtag } from "vue-gtag-next";
+
+  const { pageview } = useGtag() 
+  pageview({ page_path: "/waitlist" });
 
   const waitlistCollection = useCollection(collection(db, 'waitlistCollection'))
 

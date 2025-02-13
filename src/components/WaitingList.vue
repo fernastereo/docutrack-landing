@@ -50,7 +50,10 @@
   import { collection, addDoc, doc } from 'firebase/firestore'
   import { useCollection } from 'vuefire'
   import { db } from '@/firebaseConfig.js'
+  import { useGtag } from "vue-gtag-next";
 
+  const { event } = useGtag()
+  
   const { isDarkMode, cta } = defineProps(['isDarkMode', 'cta'])
 
   const email = ref('')
@@ -89,6 +92,11 @@
     const waitlistCollection = collection(db, 'waitlist')
     const waitlist = useCollection(waitlistCollection)
 
+    event('add-to-waiting-list', {
+      'event_category' : 'engagement',
+      'event_label' : 'waiting-list',
+      'value' : email.value
+    })
     isLoading.value = true
     message.value = ''
     messageType.value = ''
