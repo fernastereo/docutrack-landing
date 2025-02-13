@@ -1,0 +1,38 @@
+{
+  "es": {
+    "title": "Sé el primero en probar Docutrack",
+    "subtitle": "Únete a nuestra lista de espera y obtén acceso exclusivo a Docutrack antes que nadie. Simplifica tus procesos y mejora tu productividad desde el primer día.",
+    "cta": {
+      "title": "Únete a la waitlist",
+      "inputPlaceholder": "Ingresa tu correo electrónico",
+      "buttonText": "Unirse",
+      "buttonTextLoading": "Enviando...",
+      "successMessage": "¡Gracias por unirte a la waitlist!",
+      "errorMessage": "¡Ups! Algo salió mal. Por favor, intenta de nuevo."
+    }
+  },
+  "en": {
+    "title": "Be the first to try Docutrack",
+    "subtitle": "Join our waitlist and get exclusive early access to Docutrack. Simplify your processes and boost your productivity from day one.",
+    "cta": {
+      "title": "Join the waitlist",
+      "inputPlaceholder": "Enter your email",
+      "buttonText": "Join",
+      "buttonTextLoading": "Sending...",
+      "successMessage": "Thank you for joining the waitlist!",
+      "errorMessage": "Oops! Something went wrong. Please try again."
+    }
+  },
+  "de": {
+    "title": "Sei der Erste, der Docutrack ausprobiert",
+    "subtitle": "Trage dich in unsere Warteliste ein und erhalte exklusiven frühen Zugang zu Docutrack. Vereinfache deine Prozesse und steigere deine Produktivität vom ersten Tag an.",
+    "cta": {
+      "title": "Zur Warteliste hinzufügen",
+      "inputPlaceholder": "Gib deine E-Mail-Adresse ein",
+      "buttonText": "Beitreten",
+      "buttonTextLoading": "Wird gesendet...",
+      "successMessage": "Vielen Dank, dass du dich in die Warteliste eingetragen hast!",
+      "errorMessage": "Hoppla! Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    }
+  }
+}
