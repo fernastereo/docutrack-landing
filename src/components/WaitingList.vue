@@ -50,7 +50,6 @@
   import { collection, addDoc, doc } from 'firebase/firestore'
   import { useCollection } from 'vuefire'
   import { db } from '@/firebaseConfig.js'
-  import { event } from 'vue-gtag'
 
   const { isDarkMode, cta } = defineProps(['isDarkMode', 'cta'])
 
@@ -105,12 +104,6 @@
       if (!response) {
         throw new Error('An error occurred')
       }    
-      
-      event('add-to-waitlist', {
-        event_category: 'engagement',
-        event_label: 'added to waitlist',
-        value: email.value,
-      })
 
       message.value = cta.successMessage
       messageType.value = 'success'
