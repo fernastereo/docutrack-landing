@@ -1,28 +1,32 @@
 {
   "es": [
-      {
-        "name": "Funciones",
-        "link": "features"
-      },
-      { 
-        "name": "Solución",
-        "link": "solution"
-      },
-      {
-        "name": "FAQ",
-        "link": "faq"
-      },
-      {
-        "name": "Precios",
-        "link": "pricing"
-      }
-    ],
+    {
+      "name": "Funciones",
+      "link": "features"
+    },
+    {
+      "name": "Solución",
+      "link": "solution"
+    },
+    {
+      "name": "FAQ",
+      "link": "faq"
+    },
+    {
+      "name": "Precios",
+      "link": "pricing"
+    },
+    {
+      "name": "Casos de uso",
+      "link": "use-cases"
+    }
+  ],
   "en": [
     {
       "name": "Features",
       "link": "features"
     },
-    { 
+    {
       "name": "Solution",
       "link": "solution"
     },
@@ -33,6 +37,10 @@
     {
       "name": "Pricing",
       "link": "pricing"
+    },
+    {
+      "name": "Use Cases",
+      "link": "use-cases"
     }
   ],
   "de": [
@@ -40,17 +48,21 @@
       "name": "Funktionen",
       "link": "features"
     },
-    { 
-      "name": "Lösung", 
+    {
+      "name": "Lösung",
       "link": "solution"
     },
     {
-      "name": "FAQ", 
+      "name": "FAQ",
       "link": "faq"
     },
     {
       "name": "Preise",
       "link": "pricing"
+    },
+    {
+      "name": "Anwendungsfälle",
+      "link": "use-cases"
     }
   ]
 }

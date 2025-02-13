@@ -1,5 +1,5 @@
 <template>
-  <section id="features" :class="[
+  <section id="use-cases" :class="[
     'py-20 px-4 transition-colors duration-300',
     isDarkMode ? 'bg-base-300' : 'bg-base-200'
   ]">

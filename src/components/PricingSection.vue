@@ -34,7 +34,7 @@
   import { CheckIcon } from 'lucide-vue-next'
   import pricingContent from '@/data/pricingContent.json'
   import { useLanguage } from '@/composables/useLanguage';
-import { computed } from 'vue';
+  import { computed } from 'vue';
 
   const { language } = useLanguage()
   const { isDarkMode } = defineProps(['isDarkMode'])

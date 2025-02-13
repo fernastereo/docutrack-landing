@@ -14,7 +14,7 @@
             'w-full px-4 py-4 rounded-full',
             'outline-none ring-2 ring-base-100',
             'focus:ring-primary-200',
-            isDarkMode ? 'bg-base-300 text-base-100 ring-base-200' : 'bg-base-100 text-base-400',
+            isDarkMode ? 'bg-base-300 text-base-100 ring-base-200' : 'bg-base-100 text-base-400 ring-base-200',
             'pr-32' // Add padding to the right for the button
           ]"
           required
