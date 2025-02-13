@@ -46,8 +46,8 @@
 </template>
 
 <script setup>
-  import { ref, watch, computed } from 'vue'
-  import { collection, addDoc, doc } from 'firebase/firestore'
+  import { ref, watch } from 'vue'
+  import { collection, addDoc } from 'firebase/firestore'
   import { useCollection } from 'vuefire'
   import { db } from '@/firebaseConfig.js'
   import { useGtag } from "vue-gtag-next";
