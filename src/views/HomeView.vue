@@ -38,3 +38,16 @@
     isDarkMode.value = !isDarkMode.value
   }
 </script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Opcional: para mejorar la experiencia en móviles */
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>
