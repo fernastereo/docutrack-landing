@@ -18,9 +18,9 @@
               <span>{{ feature }}</span>
             </li>
           </ul>
-          <a href="#waiting-list" class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold text-center hover:bg-primary-300 transition-colors">
+          <button @click="planSelected(plan.genericName)" class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold text-center hover:bg-primary-300 transition-colors">
             {{ pricing.buttonText}}
-          </a>
+          </button>
         </div>
       </div>
       <div>
@@ -35,6 +35,26 @@
   import pricingContent from '@/data/pricingContent.json'
   import { useLanguage } from '@/composables/useLanguage';
   import { computed } from 'vue';
+  import { useGtag } from "vue-gtag-next";
+
+  const { event } = useGtag()
+
+  const planSelected = (planName) => {
+    console.log("🚀 ~ planSelected ~ planName:", planName)
+    event('plan-selected', {
+      'event_category' : 'engagement',
+      'event_label' : 'waiting-list',
+      'value' : planName
+    })
+
+    const element = document.getElementById('waiting-list')
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
 
   const { language } = useLanguage()
   const { isDarkMode } = defineProps(['isDarkMode'])
