@@ -24,7 +24,7 @@
       </p>
       <p class="text-md md:text-xl mb-8">
         <span class="font-bold">{{ content.subHeadline2.bolded }}</span> {{ content.subHeadline2.unbolded }}</p>
-      <WaitingList :isDarkMode="isDarkMode" />
+      <WaitingList :cta="waitingList.cta" :isDarkMode="isDarkMode" />
     </div>
   </section>
 </template>
@@ -32,11 +32,13 @@
 <script setup>
   import WaitingList from '@/components/WaitingList.vue'
   import heroContent from '@/data/heroContent.json'
+  import waitingListContent from '@/data/waitingListContent.json'
   import { useLanguage } from '@/composables/useLanguage';
   import { computed } from 'vue';
 
   const { language } = useLanguage()
   const content = computed(() => heroContent[language.value])
+  const waitingList = computed(() => waitingListContent[language.value])
   
   const { isDarkMode } = defineProps(['isDarkMode'])
 </script>

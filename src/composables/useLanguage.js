@@ -5,8 +5,7 @@ const language = ref('es');
 export const useLanguage = () => {
   
   const setLanguage = (lang) => {
-    language.value = lang
-    console.log('Idioma cambiado a:', lang)
+    language.value = lang;
   }
 
   return { language, setLanguage }

@@ -15,24 +15,24 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useLanguage } from '@/composables/useLanguage'
-import navLinks from '@/data/navLinks.json'
-import HeaderComponent from '@/components/HeaderComponent.vue'
-import HeroSection from '@/components/HeroSection.vue'
-import FeaturesSection from '@/components/FeaturesSection.vue'
-import ProblemsSection from '@/components/ProblemsSection.vue'
-import FaqSection from '@/components/FaqSection.vue'
-import PricingSection from '@/components/PricingSection.vue'
-import WaitingListSection from '@/components/WaitingListSection.vue'
-import FooterComponent from '@/components/FooterComponent.vue'
+  import { ref, computed } from 'vue'
+  import { useLanguage } from '@/composables/useLanguage'
+  import navLinks from '@/data/navLinks.json'
+  import HeaderComponent from '@/components/HeaderComponent.vue'
+  import HeroSection from '@/components/HeroSection.vue'
+  import FeaturesSection from '@/components/FeaturesSection.vue'
+  import ProblemsSection from '@/components/ProblemsSection.vue'
+  import FaqSection from '@/components/FaqSection.vue'
+  import PricingSection from '@/components/PricingSection.vue'
+  import WaitingListSection from '@/components/WaitingListSection.vue'
+  import FooterComponent from '@/components/FooterComponent.vue'
 
-const { language } = useLanguage()
-const isDarkMode = ref(false) // Default to light mode
+  const { language } = useLanguage()
+  const isDarkMode = ref(false) // Default to light mode
 
-const navItems = computed(() => navLinks[language.value])
+  const navItems = computed(() => navLinks[language.value])
 
-const toggleTheme = () => {
-  isDarkMode.value = !isDarkMode.value
-}
+  const toggleTheme = () => {
+    isDarkMode.value = !isDarkMode.value
+  }
 </script>
