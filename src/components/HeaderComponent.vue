@@ -5,7 +5,7 @@
     isDarkMode ? 'bg-base-400' : 'bg-base-100'
   ]">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#hero" class="flex items-center relative z-50">
+      <a href="/#hero" class="flex items-center relative z-50">
         <img src="/docutrack-logo-02.png" alt="Docutrack Logo" class="h-10 w-auto mr-2" />
         <span class="text-2xl font-bold text-primary-200 hidden md:block w-auto">Docutrack</span>
       </a>
