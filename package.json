@@ -15,6 +15,7 @@
     "lucide-vue-next": "^0.474.0",
     "save-dev": "^0.0.1-security",
     "vue": "^3.5.13",
+    "vue-gtag-next": "^1.14.0",
     "vue-router": "^4.5.0",
     "vuefire": "^3.2.1"
   },
