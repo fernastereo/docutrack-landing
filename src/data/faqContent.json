@@ -3,36 +3,43 @@
     "title": "Preguntas Frecuentes",
     "faqs": [
       {
+        "id": 1,
         "question": "¿Qué tipo de empresas pueden usar Docutrack?",
         "answer": "Docutrack es ideal para empresas públicas o privadas que reciben peticiones, solicitudes o documentos de sus clientes, como oficinas gubernamentales, constructoras, consultorías, y más.",
         "isOpen": false
       },
       {
+        "id": 2,
         "question": "¿Puedo personalizar los flujos de trabajo?",
         "answer": "¡Sí! Docutrack permite adaptar los flujos de trabajo según las necesidades de tu empresa.",
         "isOpen": false
       },
       {
+        "id": 3,
         "question": "¿Es seguro almacenar documentos en Docutrack?",
         "answer": "Absolutamente. Usamos encriptación de última generación y cumplimos con los estándares de seguridad más altos.",
         "isOpen": false
       },
       {
+        "id": 4,
         "question": "¿Cómo funciona el sistema de notificaciones?",
         "answer": "Docutrack envía notificaciones automáticas por email o SMS a tus clientes y equipos internos ante cualquier actualización.",
         "isOpen": false
       },
       {
+        "id": 5,
         "question": "¿Hay planes para diferentes tamaños de empresas?",
         "answer": "Sí, ofrecemos tres planes de suscripción adaptados a las necesidades de cada empresa.",
         "isOpen": false
       },
       {
+        "id": 6,
         "question": "¿Puedo crear mis propios tipos de solicitudes en Docutrack?",
         "answer": "¡Sí! Docutrack te permite crear tipos de solicitudes personalizados con campos específicos (texto, números, fechas, archivos, etc.) y flujos de trabajo adaptados a tus necesidades.",
         "isOpen": false
       },
       {
+        "id": 7,
         "question": "¿Cómo ayuda la IA en Docutrack?",
         "answer": "La IA de Docutrack clasifica solicitudes, detecta errores, predice tiempos de respuesta y ofrece respuestas automáticas, mejorando la eficiencia y la experiencia del usuario.",
         "isOpen": false
@@ -47,36 +54,43 @@
     "title": "Frequently Asked Questions",
     "faqs": [
       {
+        "id": 1,
         "question": "What types of businesses can use Docutrack?",
         "answer": "Docutrack is ideal for public or private companies that receive requests, applications, or documents from their clients, such as government offices, construction firms, consultancies, and more.",
         "isOpen": false
       },
       {
+        "id": 2,
         "question": "Can I customize workflows?",
         "answer": "Yes! Docutrack allows you to adapt workflows to your company’s needs.",
         "isOpen": false
       },
       {
+        "id": 3,
         "question": "Is it safe to store documents in Docutrack?",
         "answer": "Absolutely. We use state-of-the-art encryption and comply with the highest security standards.",
         "isOpen": false
       },
       {
+        "id": 4,
         "question": "How does the notification system work?",
         "answer": "Docutrack sends automatic notifications via email or SMS to your clients and internal teams for any updates.",
         "isOpen": false
       },
       {
+        "id": 5,
         "question": "Are there plans for different business sizes?",
         "answer": "Yes, we offer three subscription plans tailored to the needs of each business.",
         "isOpen": false
       },
       {
+        "id": 6,
         "question": "Can I create my own request types in Docutrack?",
         "answer": "Yes! Docutrack allows you to create custom request types with specific fields (text, numbers, dates, files, etc.) and workflows tailored to your needs.",
         "isOpen": false
       },
       {
+        "id": 7,
         "question": "How does AI help in Docutrack?",
         "answer": "Docutrack’s AI classifies requests, detects errors, predicts response times, and provides automated responses, improving efficiency and user experience.",
         "isOpen": false
@@ -91,36 +105,43 @@
     "title": "Häufig gestellte Fragen (FAQ)",
     "faqs": [
       {
+        "id": 1,
         "question": "Welche Arten von Unternehmen können Docutrack nutzen?",
         "answer": "Docutrack ist ideal für öffentliche oder private Unternehmen, die Anfragen, Anträge oder Dokumente von ihren Kunden erhalten, wie z. B. Behörden, Bauunternehmen, Beratungsfirmen und mehr.",
         "isOpen": false
       },
       {
+        "id": 2,
         "question": "Kann ich Workflows anpassen?",
         "answer": "Ja! Docutrack ermöglicht es Ihnen, Workflows an die Bedürfnisse Ihres Unternehmens anzupassen.",
         "isOpen": false
       },
       {
+        "id": 3,
         "question": "Ist es sicher, Dokumente in Docutrack zu speichern?",
         "answer": "Absolut. Wir verwenden modernste Verschlüsselung und erfüllen die höchsten Sicherheitsstandards.",
         "isOpen": false
       },
       {
+        "id": 4,
         "question": "Wie funktioniert das Benachrichtigungssystem?",
         "answer": "Docutrack sendet automatische Benachrichtigungen per E-Mail oder SMS an Ihre Kunden und internen Teams bei allen Aktualisierungen.",
         "isOpen": false
       },
       {
+        "id": 5,
         "question": "Gibt es Pläne für verschiedene Unternehmensgrößen?",
         "answer": "Ja, wir bieten drei Abonnementpläne an, die auf die Bedürfnisse jedes Unternehmens zugeschnitten sind.",
         "isOpen": false
       },
       {
+        "id": 6,
         "question": "Kann ich meine eigenen Anfragetypen in Docutrack erstellen?",
         "answer": "Ja! Docutrack ermöglicht es Ihnen, benutzerdefinierte Anfragetypen mit spezifischen Feldern (Text, Zahlen, Datum, Dateien usw.) und Workflows zu erstellen, die auf Ihre Bedürfnisse zugeschnitten sind.",
         "isOpen": false
       },
       {
+        "id": 7,
         "question": "Wie hilft KI bei Docutrack?",
         "answer": "Die KI von Docutrack klassifiziert Anfragen, erkennt Fehler, sagt Antwortzeiten voraus und bietet automatisierte Antworten, was die Effizienz und das Benutzererlebnis verbessert.",
         "isOpen": false

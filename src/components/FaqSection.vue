@@ -6,7 +6,7 @@
     <div class="container mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">{{ faqs.title }}</h2>
       <div class="space-y-6">
-        <div v-for="(faq, index) in faqs.faqs" :key="index" :class="[
+        <div v-for="(faq, index) in faqs.faqs" :key="faq.id" :class="[
           'p-6 rounded-lg transition-colors duration-300',
           isDarkMode ? 'bg-base-400' : 'bg-base-100'
         ]">
@@ -31,6 +31,9 @@
   import { ChevronDownIcon } from 'lucide-vue-next'
   import faqContent from '@/data/faqContent.json'
   import { useLanguage } from '@/composables/useLanguage';
+  import { useGtag } from "vue-gtag-next";
+
+  const { event } = useGtag()
 
   const { language } = useLanguage()
   const { isDarkMode } = defineProps(['isDarkMode'])
@@ -39,6 +42,15 @@
 
   const toggleFaq = (index) => {    
     faqs.value.faqs[index].isOpen = !faqs.value.faqs[index].isOpen
+    if (faqs.value.faqs[index].isOpen) {
+      const id = faqs.value.faqs[index].id
+
+      event('faq-opened', {
+        'event_category' : 'engagement',
+        'event_label' : 'faqs',
+        'value' : id
+      })
+    }
   }
 
   watch(language, (newLanguage) => {
