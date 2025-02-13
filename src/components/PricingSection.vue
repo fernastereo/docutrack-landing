@@ -18,9 +18,9 @@
               <span>{{ feature }}</span>
             </li>
           </ul>
-          <button class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold hover:bg-primary-300 transition-colors">
+          <a href="#waiting-list" class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold text-center hover:bg-primary-300 transition-colors">
             {{ pricing.buttonText}}
-          </button>
+          </a>
         </div>
       </div>
       <div>

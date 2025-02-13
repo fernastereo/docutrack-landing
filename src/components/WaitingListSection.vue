@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 px-4">
+  <div id="waiting-list" class="pt-28 pb-14 md:py-12 px-4">
     <div class="container mx-auto w-auto md:w-3/5 flex flex-col">
       <h2 class="text-2xl font-semibold text-center">{{ waitingList.title }}</h2>
       <p class="text-center my-6 w-full">{{ waitingList.subtitle }}</p>
