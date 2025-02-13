@@ -40,10 +40,9 @@
   const { event } = useGtag()
 
   const planSelected = (planName) => {
-    console.log("🚀 ~ planSelected ~ planName:", planName)
     event('plan-selected', {
       'event_category' : 'engagement',
-      'event_label' : 'waiting-list',
+      'event_label' : 'pricing',
       'value' : planName
     })
 
