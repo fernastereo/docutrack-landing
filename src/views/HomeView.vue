@@ -9,6 +9,7 @@
     <ProblemsSection :isDarkMode="isDarkMode" />
     <FaqSection :isDarkMode="isDarkMode" />
     <PricingSection :isDarkMode="isDarkMode" />
+    <UseCasesSection :isDarkMode="isDarkMode" />
     <WaitingListSection :isDarkMode="isDarkMode" />
     <FooterComponent :isDarkMode="isDarkMode" :navItems="navItems" />
   </div>
@@ -24,6 +25,7 @@
   import ProblemsSection from '@/components/ProblemsSection.vue'
   import FaqSection from '@/components/FaqSection.vue'
   import PricingSection from '@/components/PricingSection.vue'
+  import UseCasesSection from '@/components/UseCasesSection.vue'
   import WaitingListSection from '@/components/WaitingListSection.vue'
   import FooterComponent from '@/components/FooterComponent.vue'
 

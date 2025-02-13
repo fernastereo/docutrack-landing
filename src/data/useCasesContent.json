@@ -1,0 +1,44 @@
+{
+  "es": {
+    "title": "Docutrack se adapta a tus necesidades",
+    "subtitle": "Docutrack no es solo una herramienta, es una solución flexible que se ajusta a tus procesos. Aquí te mostramos cómo diferentes industrias pueden beneficiarse",
+    "features": [
+      { "title": "Gobiernos Locales", "description": "Crea solicitudes para permisos de construcción, quejas, o consultas de normativa urbana.", "icon": "Landmark" },
+      { "title": "Constructoras", "description": "Gestiona solicitudes de aprobación de planos, inspecciones o certificaciones.", "icon": "HardHat" },
+      { "title": "Consultorías", "description": "Personaliza formularios para recopilar datos específicos de tus clientes.", "icon": "Building2" },
+      { "title": "Empresas de Servicios", "description": "Recibe y gestiona solicitudes de soporte técnico, facturación o contratación.", "icon": "BaggageClaim" }
+    ],
+    "cta": {
+      "title": "Descubre cómo Docutrack puede personalizarse para tu industria.",
+      "button": "Únete a la waitlist."
+    }
+  },
+  "en": {
+    "title": "Docutrack adapts to your needs",
+    "subtitle": "Docutrack is not just a tool, it's a flexible solution that adapts to your processes. Here's how different industries can benefit",
+    "features": [
+      { "title": "Local Governments", "description": "Create requests for construction permits, complaints, or urban planning consultations.", "icon": "Landmark" },
+      { "title": "Construction Companies", "description": "Manage requests for plan approvals, inspections, or certifications.", "icon": "HardHat" },
+      { "title": "Consulting Firms", "description": "Customize forms to collect specific data from your clients.", "icon": "Building2" },
+      { "title": "Service Companies", "description": "Receive and manage requests for technical support, billing, or hiring.", "icon": "BaggageClaim" }
+    ],
+    "cta": {
+      "title": "Discover how Docutrack can be customized for your industry.",
+      "button": "Join the waitlist."
+    }
+  },
+  "de": {
+    "title": "Docutrack passt sich Ihren Bedürfnissen an",
+    "subtitle": "Docutrack ist nicht nur ein Werkzeug, sondern eine flexible Lösung, die sich Ihren Prozessen anpasst. Hier erfahren Sie, wie verschiedene Branchen davon profitieren können",
+    "features": [
+      { "title": "Kommunen", "description": "Erstellen Sie Anfragen für Baugenehmigungen, Beschwerden oder städtebauliche Beratungen.", "icon": "Landmark" },
+      { "title": "Bauunternehmen", "description": "Verwalten Sie Anfragen für Planungs- und Inspektionsgenehmigungen oder Zertifizierungen.", "icon": "HardHat" },
+      { "title": "Beratungsunternehmen", "description": "Passen Sie Formulare an, um spezifische Daten von Ihren Kunden zu erfassen.", "icon": "Building2" },
+      { "title": "Dienstleistungsunternehmen", "description": "Empfangen und verwalten Sie Anfragen für technischen Support, Abrechnung oder Einstellung.", "icon": "BaggageClaim" }
+    ],
+    "cta": {
+      "title": "Erfahren Sie, wie Docutrack für Ihre Branche angepasst werden kann.",
+      "button": "Melden Sie sich auf der Warteliste an."
+    }
+  }
+}
