@@ -1,0 +1,185 @@
+{
+  "es": {
+    "title": "Precios",
+    "subtitle": "Elige el plan que mejor se adapte a las necesidades de tu equipo.",
+    "buttonText": "Elegir Plan",
+    "plans": [
+      {
+        "name": "Básico",
+        "description": "Para equipos pequeños",
+        "price": "COP $123.881/mes",
+        "features": [
+          "Hasta 80 solicitudes/mes",
+          "Clientes ilimitados",
+          "Hasta 3 tipos de solicitudes personalizadas",
+          "Campos básicos (texto, números, fechas)",
+          "Hasta 5 usuarios",
+          "10GB de almacenamiento",
+          "Seguimiento básico de documentos",
+          "Notificaciones por correo electrónico",
+          "Soporte por correo electrónico"
+        ]
+      },
+      {
+        "name": "Pro",
+        "description": "Para negocios en crecimiento",
+        "price": "COP $227.144/mes",
+        "features": [
+          "Hasta 250 solicitudes/mes",
+          "Clientes ilimitados",
+          "Hasta 10 tipos de solicitudes personalizadas",
+          "Campos avanzados (listas desplegables, archivos adjuntos)",
+          "Hasta 20 usuarios",
+          "100GB de almacenamiento",
+          "Seguimiento avanzado de documentos",
+          "Notificaciones por correo electrónico y SMS",
+          "Soporte prioritario",
+          "Branding personalizado"
+        ]
+      },
+      {
+        "name": "Empresa",
+        "description": "Para grandes organizaciones",
+        "price": "Personalizado",
+        "features": [
+          "Solicitudes ilimitadas/mes",
+          "Clientes ilimitados",
+          "Tipos de solicitudes personalizadas ilimitadas",
+          "Campos y flujos de trabajo completamente personalizables",
+          "Usuarios ilimitados",
+          "Almacenamiento ilimitado",
+          "Funciones de seguridad avanzadas",
+          "Notificaciones por correo electrónico, SMS y WhatsApp",
+          "Soporte telefónico premium 24/7",
+          "Gerente de cuenta dedicado"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Asegura tu acceso a Docutrack con un descuento exclusivo para los primeros usuarios.",
+      "button": "Únete a la lista de espera hoy"
+    }
+  },
+  "en": {
+    "title": "Pricing",
+    "subtitle": "Choose the plan that best fits your team's needs.",
+    "buttonText": "Choose Plan",
+    "plans": [
+      {
+        "name": "Basic",
+        "description": "For small teams",
+        "price": "USD $30/month",
+        "features": [
+          "Up to 80 requests/month",
+          "Unlimited clients",
+          "Up to 3 custom request types",
+          "Basic fields (text, numbers, dates)",
+          "Up to 5 users",
+          "10GB storage",
+          "Basic document tracking",
+          "Email notifications",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "description": "For growing businesses",
+        "price": "USD $55/month",
+        "features": [
+          "Up to 250 requests/month",
+          "Unlimited clients",
+          "Up to 10 custom request types",
+          "Advanced fields (dropdowns, file attachments)",
+          "Up to 20 users",
+          "100GB storage",
+          "Advanced document tracking",
+          "Email and SMS notifications",
+          "Priority support",
+          "Custom branding"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "description": "For large organizations",
+        "price": "Custom",
+        "features": [
+          "Unlimited requests/month",
+          "Unlimited clients",
+          "Unlimited custom request types",
+          "Fully customizable fields and workflows",
+          "Unlimited users",
+          "Unlimited storage",
+          "Advanced security features",
+          "Email, SMS, and WhatsApp notifications",
+          "24/7 premium phone support",
+          "Dedicated account manager"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Secure your access to Docutrack with an exclusive discount for early users.",
+      "button": "Join the waitlist today"
+    }
+  },
+  "de": {
+    "title": "Preise",
+    "subtitle": "Wählen Sie den Plan, der am besten zu den Anforderungen Ihres Teams passt.",
+    "buttonText": "Plan auswählen",
+    "plans": [
+      {
+        "name": "Basic",
+        "description": "Für kleine Teams",
+        "price": "EUR $28,85/Monat",
+        "features": [
+          "Bis zu 80 Anfragen/Monat",
+          "Unbegrenzte Kunden",
+          "Bis zu 3 benutzerdefinierte Anfragentypen",
+          "Grundlegende Felder (Text, Zahlen, Daten)",
+          "Bis zu 5 Benutzer",
+          "10GB Speicher",
+          "Grundlegende Dokumentenverfolgung",
+          "E-Mail-Benachrichtigungen",
+          "E-Mail-Support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "description": "Für wachsende Unternehmen",
+        "price": "EUR $52,90/Monat",
+        "features": [
+          "Bis zu 250 Anfragen/Monat",
+          "Unbegrenzte Kunden",
+          "Bis zu 10 benutzerdefinierte Anfragentypen",
+          "Erweiterte Felder (Dropdowns, Dateianhänge)",
+          "Bis zu 20 Benutzer",
+          "100GB Speicher",
+          "Erweiterte Dokumentenverfolgung",
+          "E-Mail- und SMS-Benachrichtigungen",
+          "Priorisierter Support",
+          "Benutzerdefiniertes Branding"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "description": "Für große Organisationen",
+        "price": "Individuell",
+        "features": [
+          "Unbegrenzte Anfragen/Monat",
+          "Unbegrenzte Kunden",
+          "Unbegrenzte benutzerdefinierte Anfragentypen",
+          "Vollständig anpassbare Felder und Workflows",
+          "Unbegrenzte Benutzer",
+          "Unbegrenzter Speicher",
+          "Erweiterte Sicherheitsfunktionen",
+          "E-Mail-, SMS- und WhatsApp-Benachrichtigungen",
+          "24/7 Premium-Telefonsupport",
+          "Dedizierter Account-Manager"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Sichern Sie sich Ihren Zugang zu Docutrack mit einem exklusiven Rabatt für frühe Nutzer.",
+      "button": "Treten Sie noch heute der Warteliste bei"
+    }
+  }
+}

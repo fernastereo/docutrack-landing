@@ -2,9 +2,10 @@
   <!-- Pricing Section -->
   <section id="pricing" class="py-24 px-4">
     <div class="container mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-20">Simple, Transparent Pricing</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">{{ pricing.title }}</h2>
+      <h3 class="text-xl md:text-2xl font-semibold text-center mb-10">{{ pricing.subtitle }}</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div v-for="plan in pricingPlans" :key="plan.name" :class="[
+        <div v-for="plan in pricing.plans" :key="plan.name" :class="[
           'p-6 rounded-lg flex flex-col transition-colors duration-300',
           isDarkMode ? 'bg-base-300' : 'bg-base-100 border-2 border-base-200 shadow-2xl'
         ]">
@@ -18,9 +19,12 @@
             </li>
           </ul>
           <button class="bg-primary-200 text-base-400 px-6 py-3 rounded-full font-semibold hover:bg-primary-300 transition-colors">
-            Choose Plan
+            {{ pricing.buttonText}}
           </button>
         </div>
+      </div>
+      <div>
+        <p class="text-center mt-12 text-xl">{{ pricing.cta.title }} <a class="underline underline-offset-8" href="#hero">{{ pricing.cta.button }}</a></p>
       </div>
     </div>
   </section>
@@ -28,27 +32,12 @@
 
 <script setup>
   import { CheckIcon } from 'lucide-vue-next'
-  
+  import pricingContent from '@/data/pricingContent.json'
+  import { useLanguage } from '@/composables/useLanguage';
+import { computed } from 'vue';
+
+  const { language } = useLanguage()
   const { isDarkMode } = defineProps(['isDarkMode'])
 
-  const pricingPlans = [
-    {
-      name: 'Basic',
-      description: 'For small teams',
-      price: '$9/month',
-      features: ['Unlimited Clients', 'Up to 5 users', '10GB storage', 'Basic document tracking', 'Email support']
-    },
-    {
-      name: 'Pro',
-      description: 'For growing businesses',
-      price: '$29/month',
-      features: ['Unlimited Clients', 'Up to 20 users', '100GB storage', 'Advanced document tracking', 'Priority support', 'Custom branding']
-    },
-    {
-      name: 'Enterprise',
-      description: 'For large organizations',
-      price: 'Custom',
-      features: ['Unlimited Clients', 'Unlimited users', 'Unlimited storage', 'Advanced security features', '24/7 phone support', 'Dedicated account manager']
-    }
-  ]
+  const pricing = computed(() => pricingContent[language.value])
 </script>
