@@ -9,6 +9,7 @@
         <div class="mt-8 flow-root">
           <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+              <h2>Total usuarios registrados: {{ totalMails }}</h2>
               <table class="min-w-full divide-y divide-gray-300">
                 <thead>
                   <tr>
@@ -60,7 +61,8 @@
   const { language } = useLanguage()
 
   const waitlistCollection = useCollection(collection(db, 'waitlist'))
-
+  //contar el numero de registros
+  const totalMails = ref(waitlistCollection.value.length)
   const isDarkMode = ref(false) // Default to light mode
   const navItems = computed(() => navLinks[language.value])
 

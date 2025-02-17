@@ -16,6 +16,7 @@ app.use(
     property: {
       id: import.meta.env.VITE_MEASUREMENT_ID,
     },
+    enabled: import.meta.env.MODE === 'production',
   },
   router
 );
